@@ -3,7 +3,7 @@
 // REQS: use .map
 
 export const getCountryNames = (countries) => {
-  const countryNames = countries.map((countries) => countries.name);
+  const countryNames = countries.map((country) => country.name);
   return countryNames;
 };
 
@@ -12,7 +12,7 @@ export const getCountryNames = (countries) => {
 // REQS: use .map
 
 export const getCountryCodes = (countries) => {
-  const countryCodes = countries.map((countries) => [countries.name, countries.iso2]);
+  const countryCodes = countries.map((country) => [country.name, country.iso2]);
   return countryCodes;
 };
 
@@ -21,6 +21,6 @@ export const getCountryCodes = (countries) => {
 // REQS: use .map
 
 export const getBrands = (brands) => {
-  const brandNames = brands.map((brands) => brands.brand);
+  const brandNames = brands.map((brand) => brand.brand);
   return brandNames;
 };
